@@ -22,6 +22,7 @@ public class PersonController {
     public List<Person> add(@RequestBody Person p)
     {
        List<Person> list= personService.addPerson(p);
+       System.out.println("change in controller");
        return list;
     }
 
